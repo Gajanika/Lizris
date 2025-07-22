@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> flex </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class=" item item1">1</div>
+        <div class=" item item2">2</div>
+        <div class=" item item3">Lorem ipsum dolor sit amet.</div>
+        <div class=" item item4">4</div>
+        <div class=" item item5">5</div>
+        <div class=" item item6">6</div>
+      
+             
+    </div>
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+       flex-wrap: wrap;
+    }
+    .item{
+        flex:0 1 400px;
+    }
+   .item3{
+    flex-basis: 10 5 600px;
+   }
+
+</style>
+<h1>
+    flex – A CSS layout model that arranges items in a row or column.
+
+justify-content – Defines how space is distributed along the main axis (like center, start, end).
+
+flex-wrap – Allows flex items to wrap onto multiple lines when needed.
+
+flex-basis – Sets the initial size of a flex item before remaining space is distributed.
+
+container – A wrapper element that holds all the .item divs and controls their layout.
+   
+</h1>
+</body>
+</html>   
