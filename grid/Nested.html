@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nested</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-rows: auto auto auto auto auto;
+      gap: 10px;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+
+    .top-bar {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .address {
+      display: grid;
+    }
+
+    .title {
+      display: grid;
+    }
+
+    .social-links {
+      display: grid;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>/* Header Top Bar with Email and Phone */</h1>
+    <div class="top-bar">
+      <span>information@mail.com</span>
+      <span>Call Us: (1) 234-567-8901</span>
+    </div>
+
+    <h1>/* Address Line Below Header */</h1>
+    <div class="address">
+      <span>Victoria Palace 430 main Ave Norwalk, CT</span>
+    </div>
+
+    <h1>/* Site Title and Subtitle */</h1>
+    <div class="title">
+      <h2>FlatOn Pro</h2>
+      <strong>Multipurpose WordPress Theme</strong>
+    </div>
+
+    <h1>/* Social Media Links Section */</h1>
+    <div class="social-links">
+      <span>Facebook</span>
+      <span>Twitter</span>
+      <span>YouTube</span>
+    </div>
+
+    <h1>/* Navigation Menu Section */</h1>
+    <div class="menu">
+      <span>Home</span>
+      <span>Sliders</span>
+      <span>Features</span>
+      <span>Shortcodes</span>
+      <span>Pages</span>
+    </div>
+
+  </div>
+</body>
+</html>
+

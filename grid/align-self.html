@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>align-self Example</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 200px;
+      border: 2px solid gray;
+      gap: 10px;
+    }
+
+    .item {
+      background-color: lightblue;
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    .item1 {
+      align-self: start; /* Align to top */
+    }
+
+    .item2 {
+      align-self: center; /* Align to center vertically */
+    }
+
+    .item3 {
+      align-self: end; /* Align to bottom */
+    }
+
+    .item4 {
+      align-self: stretch; /* Stretch vertically */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item item1">Top</div>
+    <div class="item item2">Center</div>
+    <div class="item item3">Bottom</div>
+    <div class="item item4">Stretch</div>
+  </div>
+
+</body>
+</html>

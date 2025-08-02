@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Align Grid Items Content</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 10px;
+      height: 300px;
+
+      /* Align all items inside the grid */
+      justify-items: center; /* horizontally center content */
+      align-items: center;   /* vertically center content */
+    }
+
+    .item {
+      background-color: lightcoral;
+      width: 100px;
+      height: 100px;
+      display: grid;
+      place-items: center; /* center text inside each item */
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item">One</div>
+    <div class="item">Two</div>
+    <div class="item">Three</div>
+    <div class="item">Four</div>
+  </div>
+
+</body>
+</html>
